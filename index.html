@@ -3,78 +3,272 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grupo NV | Trabajos para particulares</title>
-<meta name="description" content="Grupo NV: rehabilitación, fachadas, limpieza e impermeabilización de techos para particulares en Ávila y provincias cercanas.">
+<meta name="description" content="Grupo NV: profesionales al servicio del particular. Rehabilitación, mantenimiento, trabajos eléctricos y energía solar en Ávila y provincias cercanas.">
+<title>Grupo NV | Profesionales al servicio del particular</title>
+
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#f4f6f7;color:#222;line-height:1.6}
-header{background:#123f63;color:white;text-align:center;padding:55px 20px}
+html{scroll-behavior:smooth}
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f7f9;
+  color:#20252b;
+  line-height:1.6;
+}
+header{
+  background:linear-gradient(135deg,#123f63,#0b2f4b);
+  color:white;
+  text-align:center;
+  padding:52px 20px 58px;
+}
+.logo{
+  display:inline-block;
+  border:3px solid rgba(255,255,255,.9);
+  border-radius:18px;
+  padding:10px 22px;
+  margin-bottom:18px;
+  font-weight:900;
+  font-size:32px;
+  letter-spacing:2px;
+}
 header h1{font-size:42px;margin-bottom:10px}
-header p{font-size:22px;margin:6px 0}
-.boton{display:inline-block;margin-top:25px;background:#fdbb12;color:#111;text-decoration:none;font-weight:bold;font-size:20px;padding:14px 28px;border-radius:10px}
-section{max-width:1000px;margin:auto;padding:45px 20px}
-h2{text-align:center;color:#123f63;font-size:34px;margin-bottom:25px}
-.intro{text-align:center;font-size:20px;max-width:800px;margin:auto}
-.servicios{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:25px}
-.card{background:white;border-radius:14px;padding:25px;box-shadow:0 3px 12px #00000018}
+header p{font-size:21px;margin:5px 0}
+.boton{
+  display:inline-block;
+  margin-top:25px;
+  background:#fdbb12;
+  color:#111;
+  text-decoration:none;
+  font-weight:800;
+  font-size:20px;
+  padding:14px 30px;
+  border-radius:12px;
+  box-shadow:0 5px 14px #0003;
+}
+.boton:hover{transform:translateY(-1px)}
+section{max-width:1100px;margin:auto;padding:55px 20px}
+h2{text-align:center;color:#123f63;font-size:34px;margin-bottom:28px}
+.intro{
+  text-align:center;
+  font-size:20px;
+  max-width:850px;
+  margin:auto;
+}
+.servicios{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+  gap:20px;
+}
+.card{
+  background:white;
+  border-radius:16px;
+  padding:25px;
+  box-shadow:0 4px 15px #00000012;
+  border-top:4px solid #fdbb12;
+}
 .card h3{color:#123f63;margin-bottom:10px;font-size:21px}
-.galeria{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
-.galeria img{width:100%;height:300px;object-fit:cover;border-radius:12px;box-shadow:0 3px 12px #00000022}
-.contacto{background:#123f63;color:white;text-align:center}
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:18px;
+}
+.trabajo{
+  background:white;
+  border-radius:16px;
+  overflow:hidden;
+  box-shadow:0 4px 15px #00000018;
+}
+.trabajo img{
+  width:100%;
+  height:290px;
+  object-fit:cover;
+  display:block;
+}
+.trabajo p{
+  padding:14px 16px;
+  font-weight:700;
+  color:#123f63;
+}
+.contacto{
+  background:#123f63;
+  color:white;
+  text-align:center;
+  max-width:none;
+}
 .contacto h2{color:white}
 .telefonos{font-size:25px;font-weight:bold;margin:18px 0}
 .telefonos a{color:white;text-decoration:none}
-footer{text-align:center;background:#0d2d46;color:white;padding:20px}
-@media(max-width:600px){header h1{font-size:34px}header p{font-size:19px}h2{font-size:29px}.galeria img{height:240px}}
+footer{
+  text-align:center;
+  background:#0d2d46;
+  color:white;
+  padding:22px;
+}
+.nota{
+  text-align:center;
+  margin-top:22px;
+  color:#5d6872;
+  font-size:15px;
+}
+@media(max-width:600px){
+  header{padding:40px 16px 48px}
+  header h1{font-size:34px}
+  header p{font-size:19px}
+  h2{font-size:29px}
+  .galeria{grid-template-columns:1fr}
+  .trabajo img{height:245px}
+}
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>GRUPO NV</h1>
-<p>Profesionales al servicio del particular</p>
-<p>Ávila y provincias cercanas</p>
-<a class="boton" href="tel:+34632502144">📞 Llámanos</a>
+  <div class="logo">GRUPO NV</div>
+  <h1>Profesionales al servicio del particular</h1>
+  <p>Ávila y provincias cercanas</p>
+  <a class="boton" href="tel:+34632502144">📞 Llámanos</a>
 </header>
 
 <section>
-<h2>Bienvenidos a Grupo NV</h2>
-<p class="intro">
-Somos un grupo de trabajadores por cuenta propia especializados en trabajos de
-rehabilitación, mejora y mantenimiento de viviendas. Trabajamos principalmente
-para particulares, ofreciendo un servicio cercano, profesional y adaptado a cada proyecto.
-</p>
+  <h2>Bienvenidos a Grupo NV</h2>
+  <p class="intro">
+    Somos un grupo de trabajadores por cuenta propia especializados en
+    rehabilitación, mejora y mantenimiento de viviendas. Ofrecemos un servicio
+    cercano, profesional y adaptado a cada proyecto.
+  </p>
 </section>
 
 <section>
-<h2>Nuestros servicios</h2>
-<div class="servicios">
-<div class="card"><h3>🏠 Rehabilitación de fachadas</h3><p>Reparación, preparación y mejora de fachadas y paredes exteriores.</p></div>
-<div class="card"><h3>☀️ Trabajos con paneles solares</h3><p>Montaje y trabajos relacionados con instalaciones solares.</p></div>
-<div class="card"><h3>💧 Limpieza e impermeabilización de techos</h3><p>Limpieza, mantenimiento y protección de cubiertas para ayudar a evitar filtraciones.</p></div>
-<div class="card"><h3>🔨 Reformas y mantenimiento</h3><p>Trabajos de mejora, reparación y mantenimiento de viviendas.</p></div>
-</div>
+  <h2>Nuestros servicios</h2>
+  <div class="servicios">
+    <div class="card">
+      <h3>🏠 Rehabilitación y fachadas</h3>
+      <p>Mejora, reparación y mantenimiento de fachadas y paredes exteriores.</p>
+    </div>
+    <div class="card">
+      <h3>☀️ Energía solar</h3>
+      <p>Montaje y trabajos relacionados con instalaciones de paneles solares.</p>
+    </div>
+    <div class="card">
+      <h3>⚡ Instalaciones eléctricas</h3>
+      <p>Trabajos de instalación, mantenimiento y adaptación eléctrica.</p>
+    </div>
+    <div class="card">
+      <h3>🔧 Reformas y mantenimiento</h3>
+      <p>Reparaciones, mejoras y trabajos de mantenimiento para viviendas.</p>
+    </div>
+    <div class="card">
+      <h3>🏗️ Cubiertas y tejados</h3>
+      <p>Trabajos de mantenimiento, reparación y mejora de cubiertas.</p>
+    </div>
+  </div>
 </section>
 
 <section>
-<h2>Algunos de nuestros trabajos</h2>
-<div class="galeria">
-<img src="trabajo1.jpg" alt="Trabajo de rehabilitación de fachada realizado por Grupo NV">
-<img src="trabajo2.jpg" alt="Trabajo de rehabilitación de fachada realizado por Grupo NV">
-<img src="trabajo3.jpg" alt="Trabajo de limpieza y mantenimiento de techo realizado por Grupo NV">
-</div>
+  <h2>Trabajos realizados</h2>
+
+  <div class="galeria">
+
+    <!-- FOTOS QUE YA ESTÁN EN GITHUB -->
+    <div class="trabajo">
+      <img src="trabajo1.jpg" alt="Trabajo de rehabilitación realizado por Grupo NV">
+      <p>Rehabilitación y mejora de vivienda</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo2.jpg" alt="Trabajo realizado por Grupo NV">
+      <p>Trabajo de mantenimiento</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo3.jpg" alt="Trabajo de cubierta realizado por Grupo NV">
+      <p>Mantenimiento de cubierta</p>
+    </div>
+
+    <!-- NUEVAS FOTOS: subir a GitHub con estos nombres -->
+    <div class="trabajo">
+      <img src="trabajo4.jpg" alt="Instalación de paneles solares">
+      <p>Instalación de paneles solares</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo5.jpg" alt="Instalación solar sobre cubierta">
+      <p>Montaje de instalación solar</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo6.jpg" alt="Trabajo eléctrico">
+      <p>Instalación eléctrica</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo7.jpg" alt="Montaje realizado por Grupo NV">
+      <p>Montaje y trabajos en cubierta</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo8.jpg" alt="Estructura para paneles solares">
+      <p>Estructura para paneles solares</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo9.jpg" alt="Paneles solares instalados">
+      <p>Instalación fotovoltaica</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo10.jpg" alt="Paneles solares sobre cubierta">
+      <p>Montaje de paneles solares</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo11.jpg" alt="Instalación eléctrica y equipos">
+      <p>Instalación y equipos eléctricos</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo12.jpg" alt="Instalación de paneles solares en tejado">
+      <p>Instalación solar en tejado</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo13.jpg" alt="Equipo trabajando en una instalación">
+      <p>Trabajo en equipo</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo14.jpg" alt="Montaje de estructura solar">
+      <p>Montaje de estructura</p>
+    </div>
+
+    <div class="trabajo">
+      <img src="trabajo15.jpg" alt="Trabajadores preparando una instalación">
+      <p>Preparación y montaje</p>
+    </div>
+
+  </div>
+
+  <p class="nota">
+    Esta galería se puede ampliar en cualquier momento con nuevos trabajos.
+  </p>
 </section>
 
 <section class="contacto">
-<h2>¿Necesitas un trabajo en tu vivienda?</h2>
-<p>Consúltanos sin compromiso. Trabajamos en Ávila y provincias cercanas.</p>
-<div class="telefonos">
-<a href="tel:+34632502144">632 50 21 44</a><br>
-<a href="tel:+34633952653">633 95 26 53</a>
-</div>
-<a class="boton" href="tel:+34632502144">📞 Contactar</a>
+  <h2>¿Necesitas un trabajo en tu vivienda?</h2>
+  <p>Consúltanos sin compromiso. Trabajamos en Ávila y provincias cercanas.</p>
+
+  <div class="telefonos">
+    <a href="tel:+34632502144">632 50 21 44</a><br>
+    <a href="tel:+34633952653">633 95 26 53</a>
+  </div>
+
+  <a class="boton" href="tel:+34632502144">📞 Contactar</a>
 </section>
 
-<footer>© Grupo NV · Profesionales al servicio del particular</footer>
+<footer>
+  © Grupo NV · Profesionales al servicio del particular
+</footer>
+
 </body>
 </html>
